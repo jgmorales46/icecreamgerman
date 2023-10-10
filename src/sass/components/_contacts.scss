@@ -1,0 +1,277 @@
+.contacts{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 44px;
+
+  padding: 50px 0 ;
+    flex-wrap: wrap;
+    
+ 
+}
+
+
+.containers{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+
+.contacts__contenedores{
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  background-color: var(--rectangle-color);
+  border-radius: 24px;
+  margin: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  max-width: 370px;
+  height: 560px;
+  padding: 40px;
+
+  //para revisar margin y padddin// 
+  margin: 5px;
+  border: 5px;
+  
+}
+
+
+
+
+//--------------------------------------------------------//
+
+
+.contacts__titulo,
+.contacts__titulo2 {
+  font-weight: 500;
+
+  color: var(--text-contrasted);
+  font-family: 'DM Sans';
+  font-style: normal;
+  border: #FFF5F6;
+  font-size: 16px;
+  line-height: 186%;
+  /* or 30px */
+
+  text-align: center;
+}
+
+ .contacts__titulo{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 73px;
+  height: 28px;
+  background: var(--rectangle-color2);
+  border-radius: 6px;
+  padding-left: 15px;
+  
+}
+
+.contacts__titulo2 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 138px;
+  height: 28px;
+
+  background: var(--rectangle-color2);
+  border-radius: 6px;
+
+  padding-left: 20px;
+  
+ 
+}
+
+
+
+.contacts__subtitulos {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+
+
+  color: var(--text);
+  padding-top: 20px;
+}
+
+.contacts__text1,
+.contacts__text2,
+.contacts__telefono,
+.contacts__correo {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: var(--text3);
+
+}
+.contacts__correo{
+    padding-bottom: 20px;
+}
+.contacts__correo:hover{
+  color: #D41443;
+}
+.contacts__text2{
+  padding-bottom: 20px;
+}
+
+.contacts__telefono{
+  padding-top: 20px;
+}
+.contacts__telefono:hover{
+  color: #D41443;
+}
+
+.contacts__horario {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+padding-bottom: 20px;
+  color: #FFA5BA;
+}
+
+.contacts__btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;  
+ 
+}
+
+.contacts__BotonLocalication,
+.contacts__BotonFranchise{
+  background: var(--button-color);
+  border-radius: 22px;
+  width: 198px;
+  height: 44px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text);
+  padding: 12px;
+  margin: 12px;
+  border: #FFF5F6;
+  cursor: pointer;
+
+}
+
+.contacts__BotonFranchise{
+  padding-left: 58px;
+}
+
+.contacts__BotonLocalication{
+  padding-left: 28px;
+}
+
+.contacts__BotonFranchise:hover,
+.contacts__BotonLocalication:hover{
+  background: var(--button-hover);
+  color: #FFF5F6;
+}
+
+.contacts__separador{
+   
+  width: 288px;
+  size: 5px;
+  border: 1px solid var(--linecolor);
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  .contacts {
+
+
+
+    .contacts__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      width: 280px;
+      //height: 412px;
+    }
+  }
+.contenedor{
+  flex-direction: column;
+  
+}
+}
+@media screen and (max-width: 768px) {
+  .containers {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+
+
+    .contacts__btn {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      
+      justify-content: center;
+      margin: auto;
+
+
+    }
+  }
+
+ 
+}
+
+@media screen and (max-width: 1280px) {
+
+  .contacts 
+  {
+      display: flex;
+  
+  .contacts__contenedores{
+        width: 100%;
+        
+        justify-content: space-between;
+          align-items: center;
+          
+          
+          //padding: 20px;
+          justify-content: center;
+        
+      .contacts__separador{
+        width: 100%;
+      }
+    
+  }
+  }
+  .contacts__btn{
+    width: 100%;
+      
+      padding: auto;
+  }
+  .contenedor{
+    gap:32px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+//aqui terminan los estilos de la seccion contacts ------------------------------------//

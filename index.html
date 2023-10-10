@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/main.min.css" />
+  <link rel="stylesheet" href="./src/css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <title>IceCream</title>
+</head>
+
+<body>
+      <!----------------------startmodal---------------->
+      
+      <div id="startmodal">
+          <input type="checkbox" id="closemodal">
+          <label for="closemodal" id="__btn">x</label>
+        <div class="startmodal__container">
+           <div class="startmodal__box">
+            <ul class="startmodal__boxinternal">
+              <li class="startmodal__element">
+                <div>
+                    <h1 class="startmodal__title">¿Helado gratis por un año?</h1>
+                </div>
+              </li>
+              <li class="__subscribe">
+                <div>
+                  <a href="terms.html" class="startmodal__terms">Términos y condiciones</a>
+                </div>
+              </li>
+            </ul>
+           </div>
+         </div>
+      </div>
+
+<header>
+    <div class="container__header">
+      <!-- -------burbujas -------------- -->
+        <div class="bubble">
+           <div></div>
+           <div></div>
+           <div></div>
+        </div>
+        <div class="bubble2">
+           <div></div>
+           <div></div>
+           <div></div>
+        </div>
+        <div class="bubble-invest">
+           <div></div>
+           <div></div>
+           <div></div>
+        </div>
+        <div class="bubble2-invest">
+           <div></div>
+           <div></div>
+           <div></div>
+        </div>
+      <!------------------ nav -------------->
+      <nav class="container__nav">
+        <div class="nav__logo">
+          <svg>
+            <use href="./src/img/svg/sprite-sheet.svg#logo"></use>
+          </svg>
+        </div>
+
+        <button id="btn_buy" class="nav__buy nav__buy--high">
+              Buy now
+            <svg class="nav__mayor-que" height="15" width="15">
+                <use href="./src/img/svg/sprite-sheet.svg#mayor-que"></use>
+            </svg>
+        </button>
+         
+         <div class="nav__menu">
+
+            <!-- ------ menu  acciones desplegables ------------->
+          <div class="nav__links2">
+
+              <!------------------¡¡¡¡¡important!!!! menu to display hidden content ------------>
+            <div class="container-ul">
+                <ul class="nav__ul--links">
+
+
+                <li class="nav__ul--text text--current">
+                  <a href="#" class="link__a--current">Home</a>
+                </li>
+
+                <li class="nav__ul--text">
+                  <a href="#about" class="link__a">About Us</a>
+                </li>
+
+                <li class="nav__ul--text">
+                  <a href="#advantages" class="link__a">How it's made?</a>
+                </li>
+
+                <li class="nav__ul--text">
+                  <a href="#products" class="link__a">Our produts</a>
+                </li>
+
+                <li class="nav__ul--text">
+                  <a href="#contacts" class="link__a">Contact</a>
+                </li>
+                <li class="nav__ul--text">
+                  <i class="bi bi-brightness-high-fill" id="Darkbutton"></i>
+                </li>
+                
+                
+              </ul>
+            </div>
+
+          </div>
+          
+          <!-- --------- menu para mostrar contenido oculto -------------->
+          <label for="checked" class="label__content">
+              <svg class="label__svg svg--1">
+                <use href="./src/img/svg/sprite-sheet.svg#-"></use>
+              </svg>
+              <svg class="label__svg  svg--2">
+                <use href="./src/img/svg/sprite-sheet.svg#-"></use>
+              </svg>
+              <svg class="label__svg  svg--3">
+                <use href="./src/img/svg/sprite-sheet.svg#-"></use>
+              </svg>
+          </label>
+        </div>
+
+      </nav>
+         <!-- svgs and images floats -->
+         
+         <div class="container__float-img">
+             <div class="container__img ">
+               <img
+                 src="./src/img/slider-pic7 1@2x.png"
+                 alt="IceCream"
+                 class="container__ice-cream"
+                 height="410px"
+                 width="171px"
+               />
+             </div>
+         </div>
+         <div class="container__float-svg">
+          <div class="container__svg">
+             <svg class="container__svg--ellipse" width="440" height="450">
+               <use href="./src/img/svg/sprite-sheet.svg#ellipse"></use>
+             </svg>
+                <div class="container__svg">
+             <svg class="container__svg--ellipse3" width="555" height="560">
+               <use href="./src/img/svg/sprite-sheet.svg#ellipse3"></use>
+             </svg>
+           </div>
+           
+   
+   
+          </div>
+         </div>
+   
+
+         <section class="hero">
+             <div class="hero__title">
+               <h1 class="hero__title--h1">
+                 ICE CREAM <br />
+                 MADE WITH <br />
+                 <h2 class="hero__title--h2">PASSION</h2>
+               </h1>
+             </div>
+             <div class="hero__button">
+               <a class="hero__link hero__link--products" href="#products">
+             <button type="button" class="hero__button hero__button--products">
+                 Products
+               </button>
+               </a>
+               <a class="hero__link hero__link--about" href="#about">
+                 <button type="button" class="hero__button hero__button--made">
+                 How it's made?
+               </button>
+               </a>          
+             </div>
+         </section>
+        
+      </div>
+      <!-- ---------- section product and numbers ---------- -->
+    <section class="product-hero">
+        <div class="product-hero__group1">
+          <svg class="product-hero__svg" width="16" height="16">
+            <use href="./src/img/svg/sprite-sheet.svg#ellipse2" > </use>
+          </svg>
+          <h2 class="product-hero__number">16</h2>
+          <h6 class="product-hero__name">cafes</h6>
+        </div>
+        <div class="product-hero__group2">
+          <svg class="product-hero__svg" width="16" height="16">
+            <use href="./src/img/svg/sprite-sheet.svg#ellipse2"> </use>
+           
+          </svg>
+          <h2 class="product-hero__number">23</h2>
+          <h6 class="product-hero__name">food trucks</h6>
+  
+        </div>
+    </section>
+      <!-- ----------- content footer of hero-header------- -->
+    <section class="hero-footer">
+        <div class="hero-colum1">
+          <img class="column1__img"
+           src="./src/img/slider-pic5 1.png" alt="leche"
+           width="152"
+           height="154">
+
+           <div class="fila2">
+            <h6 class="fila2__text">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit,
+              sed do eiusmod tempor 
+              incididunt ut labore et
+         </h6>
+         <img class="fila2__img-share"
+         src="./src/img/arrow-right 3.jpg" alt="next"
+         height="18"
+         width="18">
+          </div>
+         
+        </div>
+        <div class="hero-column3">
+          <img class="hero-column3__img-eat" src="./src/img/slider-pic4 1.png" alt="eat"
+          height="150"
+          width="190">
+
+        </div>
+    </section>
+
+    <div class="nav__menu">
+      <input type="checkbox" id="checked" class="nav__checkbox" />
+
+        <!-- ------ menu  acciones desplegables ------------->
+      <div class="nav__links">
+          <!-- -------- salir del menu ----------- -->
+        <div class="nav">
+            <label for="checked" class="nav__exit nav__exit--label">
+              <svg class="nav__exit--svg">
+                <use href="./src/img/svg/sprite-sheet.svg#close"></use>
+              </svg>
+            </label>
+        </div>
+          <!-- ---------- button buy windows small------- -->
+        <button id="btn_buy-small" class="nav__buy nav__buy--small">
+            Buy now
+            <svg class="nav__mayor-que" height="20" width="20">
+              <use href="./srcimg/svg/sprite-sheet.svg#mayor-que">  </use>
+            </svg>
+        </button>
+
+
+          <!------------------¡¡¡¡¡important!!!! menu to display hidden content ------------>
+        <div class="container-ul">
+            <ul class="nav__ul--links">
+
+
+            <li class="nav__ul--text text--current">
+              <a href="#" class="link__a--current">Home</a>
+            </li>
+
+            <li class="nav__ul--text">
+              <a href="#about" class="link__a">About Us</a>
+            </li>
+
+            <li class="nav__ul--text">
+              <a href="#advantages" class="link__a">How it's made?</a>
+            </li>
+
+            <li class="nav__ul--text">
+              <a href="#products" class="link__a">Our produts</a>
+            </li>
+
+            <li class="nav__ul--text">
+              <a href="#contacts" class="link__a">Contact</a>
+            </li>
+
+            <li class="nav__ul--text">
+              <i class="bi bi-brightness-high-fill" id="Darkbutton"></i>
+            </li>
+            
+            
+          </ul>
+        </div>
+
+      </div>
+      
+      <!-- --------- menu para mostrar contenido oculto -------------->
+      <label for="checked" class="label__content">
+          <svg class="label__svg svg--1">
+            <use href="./src/img/svg/sprite-sheet.svg#-"></use>
+          </svg>
+          <svg class="label__svg  svg--2">
+            <use href="./src/img/svg/sprite-sheet.svg#-"></use>
+          </svg>
+          <svg class="label__svg  svg--3">
+            <use href="./src/img/svg/sprite-sheet.svg#-"></use>
+          </svg>
+      </label>
+    </div>
+      <!-- ----------------- modal ---------------- -->
+</header>
+<div id="modal1">
+    <div class="background-modal">
+    <div id="modal-buy">
+      <!--  ---------- eit modal --------------- -->
+            <div class="exit-buy">
+              <button type="button" id="btn_exit" class="exit-buy__button">
+              <svg class="exit-buy__svg" height="30" width="30">
+                <use href="./src/img/svg/sprite-sheet.svg#close"></use>
+              </svg>
+              </button>
+            </div>
+            <article class="title-buy" >
+              <h1 class="title-buy__tittle" >Syper Pyper Ice Cream </h1>
+            </article>
+            <!-- --------- img y input -------------------- -->
+            <div class="content-product-buy" >
+              <div class="product-buy">
+                <img src="./src/img/home-pic1.png"  alt="cream strawberry"  class="product-buy__img">
+                  <input type="number" class="product-buy__how-many" placeholder="how many?">
+              </div>
+              <div class="product-buy">
+                <img src="./src/img/home-pic2.png" alt="smoothie" class="product-buy__img">
+                  <input type="number" class="product-buy__how-many" placeholder="how many?">
+              </div>
+              <div class="product-buy">
+                <img src="./src/img/home-pic3.png" alt="ice cream cookies" class="product-buy__img">
+                  <input type="number" class="product-buy__how-many" placeholder="how many?">
+              </div>
+            </div>
+    <!-- ------------------------- form  ----------------- -->
+            <form class="form-buy" action="">
+              <label class="form-buy__label" for="name">Name</label>
+              <input class="form-buy__input" type="text" id="name" value="" required>
+
+                  <label class="form-buy__label" for="phone">Phone</label>
+              <input class="form-buy__input" type="tel" id="phone" value="" required>
+
+                  <label class="form-buy__label" for="mail">Mail</label>
+              <input class="form-buy__input" type="mail" id="mail" value="" required>
+              <textarea id="txt-area-write" class="form-buy__area" rows="5" cols="20" required style="overflow: hidde;" placeholder="write something and maybe we read this" ></textarea>
+              
+              <button class="form-buy__button" type="submit" > I want that!</button>
+              </form>
+
+      </div>
+    </div>   
+</div>
+
+<main>
+      <!--------------------Section products----------------------------- -->
+
+      <section id="products"  class="products">
+        <div  class="container">
+          <h3 class="products__title3">100% NATURAL</h3>
+          <h2 class="products__title2">PRODUCTS</h2>
+          <ul class="products__list">
+            <li class="products__item1">
+              <div class="div__img">
+                <img class="products__img" src="./src/img/home-pic1.png" srcset="home-picl.png x1, home-picl@2x.png x2" alt="Helado de fresa" />
+              </div>
+              
+              <div class="products__rectangle1" id="rectangle">
+                <h1 class="products__title">ICE CREAM</h1>
+                <svg class="products__svg" id="svg_dots" width="26" height="6" >
+                  <use href="./src/img/svg/sprite-sheet.svg#homedots" ></use>
+                </svg>
+                
+                
+                <input type="checkbox" id="check">
+                <p class="products__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  
+                </p>
+                
+                <p class="products__description" id="checktext">
+                  Voluptatum saepe corporis explicabo culpa totam omnis aspernatur
+                  Lorem ipsum dolor  adipisicing elit.
+                </p>
+                
+                <label for="check">
+                  <svg class="products__svg" width="51" height="51">
+                    <use href="./src/img/svg/sprite-sheet.svg#arrowdown" id="svg-down"></use>
+                  </svg>
+                  </label>
+                  
+              </div>
+
+
+
+            </li>
+
+            <li class="products__item2">
+              <div class="div__img">
+                <img class="products__img" src="./src/img/home-pic2.png" srcset="home-pic2.png x1, home-pic2@2x.png x2"
+                  alt="Helado de cafe" />
+              </div>
+
+              <div class="products__rectangle2">
+                <h1 class="products__title">ICE COFFE</h1>
+                <svg class="products__svg" width="26" height="6">
+                  <use href="./src/img/svg/sprite-sheet.svg#homedots"></use>
+                </svg>
+
+
+                <input type="checkbox" id="check2">
+                <p class="products__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                </p>
+
+                <p class="products__description" id="checktext2">
+                  Voluptatum saepe corporis explicabo culpa totam omnis aspernatur
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <label for="check2">
+                  <svg class="products__svg-extend" id="svg" width="51" height="51">
+                    <use href="./src/img/svg/sprite-sheet.svg#arrowdown"></use>
+                  </svg>
+
+                </label>
+              </div>
+
+            </li>
+
+            <li class="products__item3">
+              <div class="div__img">
+                <img class="products__img" src="./src/img/home-pic3.png" srcset="home-pic3.png x1, home-pic3@2x.png x2"
+                  alt="Helado de chocolate con barquillo" />
+              </div>
+
+              <div class="products__rectangle3">
+                <h1 class="products__title">MILKSNAKES</h1>
+                <svg class="products__svg" width="26" height="6">
+                  <use href="./src/img/svg/sprite-sheet.svg#homedots" width="26" height="6" />
+                </svg>
+                  
+                  
+                  <input type="checkbox" id="check3">
+                  <p class="products__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    
+                  </p>
+                  
+                  <p class="products__description" id="checktext3">
+                    Voluptatum saepe corporis explicabo culpa totam omnis aspernatur
+                    Lorem ipsum dolor adipisicing elit.
+                  </p>
+                  
+                  <label for="check3">
+                    <svg class="products__svg-extend" id="svg" width="51" height="51">
+                      <use href="./src/img/svg/sprite-sheet.svg#arrowdown" ></use>
+                    </svg>
+                    </label>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    <!--------------------Section About----------------------------- -->
+
+
+      <section id="about" class="about">
+      <div class="container">
+        <div class="about__titlecontainer">
+          <h3 class="about__title2">TRADITION AND LOVE</h3>
+          <h2 class="about__title3"> HOW IT'S MADE?</h2>
+        </div>
+        <ul class="about__paragraph">
+          <li class="about__img"><img src="src/img/home-pic4 1.png" alt="vaca"></li>
+          <ul class="about__paragraphs">
+            <li>
+              <p class="about__paragraph1">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla. </p>
+            </li>
+            <li>
+              <p class="about__paragraph2">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+                rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+                maximus. Cras massa nibh, <br> tincidunt. <br>
+                Aliquam erat volutpat. Aenean accumsan.</p>
+            </li>
+            <li>
+              <button class="about__button" type="button" class="about__buttontext">Read more > </button>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+
+      <!--------------------Section Advantages----------------------------- -->
+      <section id="advantages" class="advantages">
+        <div class="container">
+          <ul class="advantages__list">
+            <li class="advantages__container">
+              <svg class="advantages__svg">
+                <use href="./src/img/svg/sprite-sheet.svg#milkglass"></use>
+              </svg>
+              <h2 class="advantages__value">721</h2>
+              <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="advantages__container">
+              <svg class="advantages__svg">
+                <use href="./src/img/svg/sprite-sheet.svg#applebowl"></use>
+              </svg>
+              <h2 class="advantages__value">16kg</h2>
+              <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="advantages__container">
+              <svg class="advantages__svg">
+                <use href="./src/img/svg/sprite-sheet.svg#heart"></use>
+              </svg>
+              <h2 class="advantages__value">84</h2>
+              <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+          </ul>            
+        </div>
+      </section>
+      <!--------------------Section Gallery----------------------------- -->
+
+      <section id="gallery" class="gallery__section">
+        <div class="container">
+          <div class="gallery">
+
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery1.png x1, gallery1@2x.png x2"
+                  src="./src/img/gallery/gallery1.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery2.png x1, gallery2@2x.png x2"
+                  src="./src/img/gallery/gallery2.png"
+                  alt="helados"
+                />
+              </li>
+    
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery3.png x1, gallery3@2x.png x2"
+                  src="./src/img/gallery/gallery3.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image img--four"
+                  srcset="gallery4.png x1, gallery4@2x.png x2"
+                  src="./src/img/gallery/gallery4.png"
+                  alt="helados"
+                />
+              </li>
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery5.png x1, gallery5@2x.png x2"
+                  src="./src/img/gallery/gallery5.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery6.png x1, gallery6@2x.png x2"
+                  src="./src/img/gallery/gallery6.png"
+                  alt="helados"
+                />
+              </li>
+    
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery7.png x1, gallery7@2x.png x2"
+                  src="./src/img/gallery/gallery7.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column size">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery8.png x1, gallery8@2x.png x2"
+                  src="./src/img/gallery/gallery8.png"
+                  alt="helados"
+                />
+              </li>
+    
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery9.png x1, gallery9@2x.png x2"
+                  src="./src/img/gallery/gallery9.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery10.png x1, gallery10@2x.png x2"
+                  src="./src/img/gallery/gallery10.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    <!--------------------Section CustomerReviews or Testimonials----------------------------- -->
+
+
+      <section class="testimonials__section">
+        <div class="container">
+          <div class="testimonials">
+
+            <img class="testimonials__img" src="./src/img/testimonial.png"
+              srcset="testimonial.png x1, testimonial@2x.png x2" alt="mujer sonriendo" />
+
+            <div class="testimonials__review">
+              <svg class="testimonials__quotes">
+                <use class="testimonials__quotes-use" href="./src/img/svg/sprite-sheet.svg#quotes"></use>
+              </svg>
+              <p class="testimonials__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+                ipsum primis in nibh vel risus.
+              </p>
+            </div>
+
+            <div class="testimonials__dots">
+              <span class="testimonials__dot"></span>
+              <span class="testimonials__dot"></span>
+              <span class="testimonials__dot"></span>
+            </div>
+
+            <p class="testimonials__reviewer">Emily, Los Angeles</p>
+
+            <div class="testimonials__circles">
+              <span class="testimonials__circle">
+                <svg class="testimonials__house">
+                  <use class="testimonials__house-use" href="./src/img/svg/sprite-sheet.svg#house"></use>
+                </svg>
+              </span>
+              <span class="testimonials__circle"></span>
+              <span class="testimonials__circle"></span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    <!--------------------Section Contacts----------------------------- -->
+
+
+      <section id="contacts" class="contacts">
+      <div class="container">
+
+      <div class="contacts__subcontact ">
+
+        <ul class="containers">
+
+          <li>
+
+            <div class="contacts__contenedores">
+
+              <button class="contacts__titulo"> CAFE</button>
+
+
+
+              <h2 class="contacts__subtitulos">Chicago</h2>
+              <p class="contacts__text1"> Fusce ut velit laoreet, tempus </p>
+              <p class="contacts__text2">arcu molestie vulputate</p>
+              <!--aqui va una linea de separacion-------------------------------------------------------->
+              <hr class="contacts__separador">
+
+              <h2 class="contacts__subtitulos">Monday - Friday</h2>
+              <p class="contacts__horario">08:00 AM - 10:00 PM</p>
+
+
+              <h2 class="contacts__subtitulos">Saturday - Sunday</h2>
+              <p class="contacts__horario">08:00 AM - 16:00 PM</p>
+
+              <!--aqui va una linea de separacion----------------------------------------------------->
+              <hr class="contacts__separador">
+
+
+              <p class="contacts__telefono" href="tel:383766284">+61(0) 383 766 284</p>
+
+              <a class="contacts__correo" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </div>
+
+
+          </li>
+
+
+          <li>
+
+            <div class="contacts__contenedores">
+
+
+
+              <button class="contacts__titulo2"> FOOD TRUCK</button>
+
+
+
+              <h2 class="contacts__subtitulos">Los Angeles</h2>
+              <p class="contacts__text1"> Fusce ut velit laoreet, tempus </p>
+              <p class="contacts__text2">arcu molestie vulputate</p>
+              <!--aqui va una linea de separacion-------------------------------------------------------->
+              <hr class="contacts__separador">
+
+              <h2 class="contacts__subtitulos">Monday - Friday</h2>
+              <p class="contacts__horario">08:00 AM - 10:00 PM</p>
+
+
+              <h2 class="contacts__subtitulos">Saturday - Sunday</h2>
+              <p class="contacts__horario">08:00 AM - 16:00 PM</p>
+
+              <!--aqui va una linea de separacion----------------------------------------------------->
+              <hr class="contacts__separador">
+
+
+              <p class="contacts__telefono" href="tel:383766284">+61(0) 383 766 284</p>
+
+              <a class="contacts__correo" href="mailto:noreply@envato.com">noreply@envato.com</a>
+
+
+            </div>
+
+          </li>
+
+
+          <li>
+
+            <div class="contacts__contenedores">
+
+
+              <button class="contacts__titulo"> CAFE</button>
+
+
+
+              <h2 class="contacts__subtitulos">New York</h2>
+              <p class="contacts__text1"> Fusce ut velit laoreet, tempus </p>
+              <p class="contacts__text2">arcu molestie vulputate</p>
+              <!--aqui va una linea de separacion-------------------------------------------------------->
+              <hr class="contacts__separador">
+
+              <h2 class="contacts__subtitulos">Monday - Friday</h2>
+              <p class="contacts__horario">08:00 AM - 10:00 PM</p>
+
+
+              <h2 class="contacts__subtitulos">Saturday - Sunday</h2>
+              <p class="contacts__horario">08:00 AM - 16:00 PM</p>
+
+              <!--aqui va una linea de separacion----------------------------------------------------->
+              <hr class="contacts__separador">
+
+
+              <p class="contacts__telefono" href="tel:383766284">+61(0) 383 766 284</p>
+
+              <a class="contacts__correo" href="mailto:noreply@envato.com">noreply@envato.com</a>
+
+            </div>
+
+          </li>
+
+
+
+
+        </ul>
+
+        <div class="contacts__btn">
+          <button class="contacts__BotonLocalication"> Our Loalications > </button>
+
+          <button class="contacts__BotonFranchise"> Franchise > </button>
+        </div>
+
+
+
+      </div>
+
+      </div>
+      
+          <!--pendiente por analizar la mejor implementacion en la parte de los titulos-->
+      </section>
+
+</main>
+
+<footer class="footer">
+    
+    <div class="logo">
+      <span class="logo__title">HOMEMADE ICE CREAM MADE</span>
+      <span class="logo__letter">WITH PASSION</span>
+    </div>
+    <div class="footer__icons">
+    <ul class="footer-social">
+      <li class="footer-social__list">
+        <a href="https://github.com">
+          <svg width="35" height="35" >
+            <use href="./src/img/svg/sprite-sheet.svg#github" ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social__list">
+        <a href="https://telegram.org">
+          <svg width="35" height="35" >
+            <use href="./src/img/svg/sprite-sheet.svg#telegram" ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social__list">
+        <a href="https://facebook.com">
+          <svg width="35" height="35" >
+            <use href="./src/img/svg/sprite-sheet.svg#facebook" ></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <address class="address">
+      <p class="address__p">Feel free to contact</p>
+      <a class="address__link" href="tel:+61 (0) 383 766 284"> +61 (0) 383 766 284</a>
+    </address></div>
+
+
+</footer>
+
+  <div class="copyright">
+      <li>© 2022 - IceCream. All Rights Reserved. </li>
+  </div>
+
+  <script src="./src/js/modal-mobile.js"></script>
+  <script src="./src/js/modal.js"></script>
+  <script src="./src/js/dark-mode2.js"></script>
+  <script src="./src/js/readmore.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@mixin flex-container($justify-content:flex-start, $align-items:stretch, $flex-direction:row) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+
+@mixin text-weight-size($font-weight:400, $font-size:16px) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin text-height-spacing-family($line-height:176%, $letter-spacing:0.04em, $font-family:'DM Sans') {
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-family: $font-family;
+}
+
+@mixin margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin position-top-left($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin border-style-color-width-radius($style, $color, $width, $radius) {
+    border-style: $style;
+    border-color: $color;
+    border-width: $width;
+    border-radius: $radius;
+}

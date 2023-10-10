@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/startmodal";
+@import "./components/modal";
+@import "./components/heroheader2";
+@import "./components/products";
+@import "./components/about";
+@import "./components/advantages";
+@import "./components/gallery";
+@import "./components/customerreviews";
+@import "./components/contacts";
+@import "./components/footer";
+@import "./components/checkedproducts";
+
+
+
+
+html{
+  overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+section {
+  
+  margin-bottom: 20px;
+}
+.container {
+  padding: 0 20px;
+  max-width: calc(360px - 10px);
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  section {
+    margin-bottom: 0px;
+
+  }
+  .container {
+    padding: 0 50px;
+    max-width: calc(480px - 10px);
+    margin: 80px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    margin-bottom: 50px;
+  }
+  .container {
+    padding: 0 0px;
+    max-width: calc(768px - 10px);
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section {
+    margin-bottom: 80px;
+  }
+  .container {
+    padding: 0px;
+    max-width: calc(1280px - 10px);
+    margin: 0 auto;
+  }
+}

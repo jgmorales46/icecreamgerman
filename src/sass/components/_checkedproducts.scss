@@ -1,0 +1,50 @@
+input{
+    display: flex;
+    position: absolute;
+    transform: translate(0%,-130%);
+    cursor: pointer;
+    opacity: 0;
+}
+
+    #checktext{
+        display: none;
+        transition: $transition;
+
+    }
+    #check:checked ~ #checktext{
+        display: block;
+        transition: $transition;
+    }
+    #check:checked ~ #check{
+        display: none;
+    }
+  
+
+    #checktext2{
+        display: none;
+        transition: $transition;
+
+    }
+    #check2:checked ~ #checktext2{
+        display: block;
+        transition: $transition;
+    }
+    #check2:checked ~ #check2{
+        display: none;
+    }
+    #checktext3{
+        display: none;
+        transition: $transition;
+
+    }
+    #check3:checked ~ #checktext3{
+        display: block;
+        transition: $transition;
+    }
+    #check3:checked ~ #check3{
+        display: none;
+    }    
+    #svg-down:checked {
+        transform: rotate(90deg);
+     }
+    

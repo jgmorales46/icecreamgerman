@@ -1,0 +1,87 @@
+
+    $accent-color: #D41443;
+
+    $color-black: #000000;
+    $color-white: #ffffff;
+
+    $white-mode: #f1f1f1;
+    $dark-mode: #1f1f1f;
+    $background-color-1: #FFA5BA;
+    $background-color-2: #F0D1A5;
+    $background-color-3: #C2E297;
+
+    $color-h2: #d41443;
+    $color-h1: #FFFFFF;
+    $color-h3: #FFA5BA;
+
+    $color-lineas: #e18298;
+
+    $color-rosa-oscuro: #e17992;
+    $color-fondo-hero: #ffb8ca;
+    $primary-shadow: 0px 8px 20px 0px rgba(212, 20, 68, 0.144);
+    $transition: all 250ms;
+ $color-bubble: rgba(245, 247, 220, 0.215);
+    :root{
+        --accent-color: #D41443;
+        
+        --text-inversed: #ffffff;
+        --text: #000000;
+        --text-contrasted:#ffffff;
+        --text3: #b7b7b7;
+        --menu-color:#e17992;
+
+        --background: #f9f9f9;
+        --button-color: #ffffff;
+        --button-hover: #b42a2a;
+        --rectangle-color: #ffffff;
+        --rectangle-color2: #C2E297;
+        --linecolor:#000000;
+        --linecolor2:#bababa;
+        --dots:#c7133e;
+        --text-current:#D41443;
+
+        --color-h2: #d41443;
+        --color-h1: #FFFFFF;
+        --color-h3: #e76e8b;
+        
+        --color-lineas: #e18298;
+        
+        --color-rosa-oscuro: #e17992;
+        --color-fondo-hero: #ffb8ca;
+        --primary-shadow: 0px 1px 1px 0px rgba(212,20,67,0.16);
+        --transition: all 250ms;
+        }
+        
+        .darkmode{
+        --accent-color: #6a6869;
+
+        --text-inversed: #2b2b2b;
+        --text: #ffffff;
+        --text-contrasted:#e4e4e4;
+        --text3: #b9b8b8;
+        --menu-color:#e7859c;
+        --text-current:#c52525;
+
+        --rectangle-color: #414141;
+        --button-color: #653b3b;
+        --button-hover: #da5353;
+        --rectangle-color2: #d41443;
+        --linecolor:#000000;
+        --linecolor2:#ec8c8c;
+        --dots:#ffffff;
+
+
+        --color-black: #000000;
+        --color-white: #ffffff;
+        
+        --background: #2f2f2f;
+        --color-h2: #d44468;
+        --color-h1: #FFFFFF;
+        --color-h3: #FFA5BA;
+        
+        --color-lineas: #e18298;
+        --color-rosa-oscuro: #e17992;
+        --color-fondo-hero: #ffb8ca;
+        --primary-shadow: 0px 8px 30px 0px rgba(212, 20, 68, 0.027);
+        --transition: all 250ms;
+        }

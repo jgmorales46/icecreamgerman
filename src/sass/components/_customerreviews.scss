@@ -1,0 +1,103 @@
+.testimonials {
+  @include flex-container(flex-start, center, column);
+  @include margin-auto;
+  padding-bottom: 80px;
+
+//   Image
+  &__img {
+    margin-bottom: 32px;
+  }
+
+//   Review or testimonial
+  &__review {
+    @include flex-container(center, center);
+    @include width-height(280px, 308px);
+    position: relative;
+    margin-bottom: 16px;
+  }
+  &__quotes {
+    @include position-top-left(absolute, 30px, 53px);
+  }
+  &__text {
+    @include text-weight-size(500, 12px);
+    font-family: "DM Sans";
+    color: var(--text);
+    line-height: 255%;
+    text-align: center;
+    text-decoration: 1px underline var(--linecolor2);
+
+    @include width-height(157px, 239px);
+    z-index: 1;
+  }
+
+//  Decoration and reviewer 
+  &__dots {
+    @include flex-container(center, center);
+    gap: 10px;
+  }
+  &__dot {
+    @include width-height(4px, 4px);
+    background-color: var(--dots);
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  &__reviewer {
+    @include text-weight-size(500, 14px);
+    font-family: 'DM Sans';
+    text-align: center;
+    color: var(--text);
+    line-height: 186%;
+    margin-bottom: 16px;
+  }
+  &__circles {
+    display: flex;
+    gap: 16px;
+    justify-content: center
+  }
+  &__circle {
+    @include width-height(12px, 12px);
+    border-radius: 50%;
+  }
+}
+
+// TABLET STYLES...
+@media (min-width: 768px) {
+    .testimonials {
+        &__review {
+            @include width-height(620px, 164px);
+            margin-bottom: 4px;
+        }
+        &__quotes {
+            @include position-top-left(absolute, 20px, 6px);
+        }
+        &__text {
+            @include width-height(515px, 83px);
+            @include text-height-spacing-family(216%, 0.04em);
+            font-size: 14px;
+        }
+        &__reviewer {
+            font-size: 16px;
+        }
+    }
+}
+
+// DESKTOP STYLES...
+@media (min-width: 1280px) {
+    .testimonials {
+        &__review {
+            @include width-height(968px, 138px);
+            margin-bottom: 16px;
+        }
+        &__quotes {
+            @include position-top-left(absolute, 32px, 72px);
+        }
+        &__text {
+            @include width-height(750px, 52px);
+            @include text-height-spacing-family(186%, 0.04em);
+            font-size: 16px;
+        }
+        &__reviewer {
+            font-size: 20px;
+        }
+    }
+}
